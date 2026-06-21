@@ -21,6 +21,7 @@
 1. Download Bloxstrap dari [bloxstraplabs.com](https://bloxstraplabs.com/)
 2. Install Bloxstrap, arahkan lokasi instalasi ke folder **Bloxstrap**
 3. Jalankan **Bloxstrap Loader.exe** (Administrator jika diperlukan)
+   - Pertama kali jalan di **Server** — registry akan di-export ke `_AppRegistry/`
 
 ### Konfigurasi
 Buka `config.ini` untuk mengatur sesi login:
@@ -32,5 +33,5 @@ AutoLogout=true
 
 | Nilai | Keterangan |
 |-------|-----------|
-| `true` | Cache Roblox dibersihkan tiap launcher dijalankan — akun logout otomatis |
-| `false` | Cache tetap dipertahankan — akun tetap login |
+| `true` | akun logout otomatis |
+| `false` | akun tetap login |
