@@ -19,8 +19,9 @@
 
 ### Langkah-langkah
 1. Download Bloxstrap dari [bloxstraplabs.com](https://bloxstraplabs.com/)
-2. Install Bloxstrap, arahkan lokasi instalasi ke folder **Bloxstrap**
-3. Jalankan **Bloxstrap Loader.exe** (Administrator jika diperlukan)
+2. Jalankan **Bloxstrap Loader.exe** (Untuk Membuat Folder Otomatis)
+3. Install Bloxstrap, arahkan lokasi instalasi ke folder **Bloxstrap**
+4. Jalankan kembali **Bloxstrap Loader.exe** (Administrator jika diperlukan)
    - Pertama kali jalan di **Server** — registry akan di-export ke `_AppRegistry/`
 
 ### Konfigurasi
@@ -35,3 +36,16 @@ AutoLogout=true
 |-------|-----------|
 | `true` | akun logout otomatis |
 | `false` | akun tetap login |
+
+## Struktur Folder
+
+```
+Bloxstrap Loader/
+├── Bloxstrap Loader.exe      # Launcher utama
+├── Bloxstrap/                # Folder instalasi Bloxstrap
+├── _AppRegistry/             # Hasil export registry (server)
+├── _CommonRedist/            # .NET Runtime installer
+├── config.ini                # Pengaturan AutoLogout
+├── z_Settings.bat            # Buka settings
+└── z_Uninstall.bat           # Hapus semua
+```
